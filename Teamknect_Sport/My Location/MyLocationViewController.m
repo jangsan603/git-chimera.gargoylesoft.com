@@ -19,7 +19,9 @@
 @implementation MyLocationViewController
 @synthesize viewLocation;
 @synthesize txtZipCode;
+
 #pragma mark - current location view.
+
 @synthesize  viewCurrentLocation;
 @synthesize  lblCurrentLocation;
 @synthesize  currentPositionMapView;
