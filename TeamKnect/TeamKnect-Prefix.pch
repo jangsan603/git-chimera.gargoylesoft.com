@@ -1,0 +1,54 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <CoreData/CoreData.h>
+    #import <AFNetworking.h>
+    #import <EventKit/EventKit.h>
+    #import "BlockAlertView.h"
+    #import "WebServer.h"
+    #import "UIStoryboard+TopViewController.h"
+    #import "UIStoryboardSegue+TopViewController.h"
+    #import "LocalizedStrings.h"
+    #import "TestFlight.h"
+    #import "NSDate+DebugStrings.h"
+    #import "CalendarEventStore.h"
+    #import <iAd/iAd.h>
+#endif
+
+#define RGB_COLOR(r, g, b) [UIColor colorWithRed:r/255. green:g/255. blue:b/255. alpha:1]
+
+#define IS_IPAD [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad
+
+#define THEMEEXT(control, func, r, g, b) [[control appearance] func:RGB_COLOR(r, g, b)]
+#define THEME(control, r, g, b) THEMEEXT(control, setTintColor, r, g, b)
+
+#define kTintColor RGB_COLOR(0, 162., 255.)
+
+#define WebServerDownTitle NSLocalizedString(@"WEB_SERVER_DOWN", @"Alert title saying the web server is unavailable")
+#define kCancelButton NSLocalizedString(@"Cancel", @"The cancel button")
+#define kOKButton NSLocalizedString(@"OK", @"The OK button")
+
+#define kMeasurementTypeChangedNotification @"Metric Imperial Notification"
+#define kMeSetNotification @"Me was set"
+#define kTeamsChangedNotification @"Teams Changed"
+#define kSelectedDateChangedNotification @"Date changed"
+#define kInjuryChangedNotification @"Injury Changed"
+#define kInjuryChangedValue @"Injury Changed Value"
+
+#define kJumpToSpecificDayNotification @"Jump To Day"
+#define kJumpToSpecificDayValue @"Jump To Day Value"
+
+#define IS_USING_METRIC [[[NSUserDefaults standardUserDefaults] valueForKey:@"unit_preference"] isEqualToString:@"metric"]

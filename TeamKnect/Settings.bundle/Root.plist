@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Unit Type</string>
+			<key>Key</key>
+			<string>unit_preference</string>
+			<key>DefaultValue</key>
+			<string>imperial</string>
+			<key>Titles</key>
+			<array>
+				<string>Imperial</string>
+				<string>Metric</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>imperial</string>
+				<string>metric</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Name Format</string>
+			<key>Key</key>
+			<string>name_preference</string>
+			<key>DefaultValue</key>
+			<string>lf</string>
+			<key>Titles</key>
+			<array>
+				<string>Last, First</string>
+				<string>First Last</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>lf</string>
+				<string>fl</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Default Calendar Display</string>
+			<key>Key</key>
+			<string>cal_display_preference</string>
+			<key>DefaultValue</key>
+			<integer>1</integer>
+			<key>Titles</key>
+			<array>
+				<string>Day View</string>
+				<string>Month View</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+			</array>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>Title</key>
+	<string></string>
+</dict>
+</plist>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CalendarMap" representedClassName="CalendarMap" parentEntity="SQL" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventIdentifier" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="exclusions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rfc2445" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="extras" toMany="YES" deletionRule="Cascade" destinationEntity="CalendarMapExtras" inverseName="calendarMap" inverseEntity="CalendarMapExtras" syncable="YES"/>
+        <relationship name="team" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="calendarMaps" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="CalendarMapExtras" representedClassName="CalendarMapExtras" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="eventIdentifier" attributeType="String" syncable="YES"/>
+        <attribute name="rfc2445" attributeType="String" syncable="YES"/>
+        <attribute name="sequence" attributeType="Integer 16" defaultValueString="2" syncable="YES"/>
+        <relationship name="calendarMap" maxCount="1" deletionRule="Nullify" destinationEntity="CalendarMap" inverseName="extras" inverseEntity="CalendarMap" syncable="YES"/>
+    </entity>
+    <entity name="Conversation" representedClassName="Conversation" parentEntity="SQL" syncable="YES">
+        <attribute name="modified" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Message" inverseName="conversation" inverseEntity="Message" syncable="YES"/>
+        <relationship name="people" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="conversations" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Injury" representedClassName="Injury" parentEntity="SQL" syncable="YES">
+        <attribute name="details" attributeType="String" syncable="YES"/>
+        <attribute name="doi" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="dor" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="site" attributeType="String" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="person" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="injuries" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" parentEntity="SQL" syncable="YES">
+        <attribute name="created" attributeType="Date" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <relationship name="conversation" maxCount="1" deletionRule="Nullify" destinationEntity="Conversation" inverseName="messages" inverseEntity="Conversation" syncable="YES"/>
+        <relationship name="sender" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="messages" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" parentEntity="SQL" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country_of_birth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dob" attributeType="Date" syncable="YES"/>
+        <attribute name="email" attributeType="String" syncable="YES"/>
+        <attribute name="first" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="injury_status" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="last" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="nationality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="weight" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="conversations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Conversation" inverseName="people" inverseEntity="Conversation" syncable="YES"/>
+        <relationship name="injuries" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Injury" inverseName="person" inverseEntity="Injury" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Message" inverseName="sender" inverseEntity="Message" syncable="YES"/>
+        <relationship name="picture" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Picture" inverseName="person" inverseEntity="Picture" syncable="YES"/>
+        <relationship name="teamPerson" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TeamPerson" inverseName="person" inverseEntity="TeamPerson" syncable="YES"/>
+    </entity>
+    <entity name="Picture" representedClassName="Picture" syncable="YES">
+        <attribute name="image" attributeType="Binary" syncable="YES"/>
+        <relationship name="person" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="picture" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Sport" representedClassName="Sport" parentEntity="SQL" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" inverseName="sport" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="SQL" representedClassName="SQL" isAbstract="YES" syncable="YES">
+        <attribute name="sql_ident" attributeType="Integer 64" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Team" representedClassName="Team" parentEntity="SQL" syncable="YES">
+        <attribute name="calendarIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="zip" attributeType="String" syncable="YES"/>
+        <relationship name="calendarMaps" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CalendarMap" inverseName="team" inverseEntity="CalendarMap" syncable="YES"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TeamPerson" inverseName="team" inverseEntity="TeamPerson" syncable="YES"/>
+        <relationship name="sport" maxCount="1" deletionRule="Nullify" destinationEntity="Sport" inverseName="teams" inverseEntity="Sport" syncable="YES"/>
+    </entity>
+    <entity name="TeamPerson" representedClassName="TeamPerson" parentEntity="SQL" syncable="YES">
+        <attribute name="jersey" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roles" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="shot" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strengths" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weaknesses" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="teamPerson" inverseEntity="Person" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="people" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CalendarMap" positionX="-290" positionY="518" width="128" height="148"/>
+        <element name="CalendarMapExtras" positionX="-254" positionY="710" width="128" height="118"/>
+        <element name="Conversation" positionX="457" positionY="-13" width="128" height="103"/>
+        <element name="Injury" positionX="601" positionY="162" width="128" height="133"/>
+        <element name="Message" positionX="214" positionY="144" width="128" height="103"/>
+        <element name="Person" positionX="234" positionY="329" width="128" height="328"/>
+        <element name="Picture" positionX="259" positionY="710" width="128" height="73"/>
+        <element name="Sport" positionX="-290" positionY="153" width="128" height="73"/>
+        <element name="SQL" positionX="-65" positionY="-9" width="128" height="58"/>
+        <element name="Team" positionX="-299" positionY="308" width="128" height="133"/>
+        <element name="TeamPerson" positionX="-81" positionY="306" width="128" height="178"/>
+    </elements>
+</model>

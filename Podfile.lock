@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (2.2.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.2):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.2)
+  - AFNetworking/Security (2.2.2)
+  - AFNetworking/Serialization (2.2.2)
+  - AFNetworking/UIKit (2.2.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - HTAutocompleteTextField (1.2.6)
+  - iOS-color-wheel (0.1)
+  - KIF (3.0.2):
+    - KIF/XCTest
+  - KIF/XCTest (3.0.2)
+  - TestFlightSDK (3.0.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - HTAutocompleteTextField
+  - iOS-color-wheel
+  - KIF (~> 3.0)
+  - TestFlightSDK
+
+SPEC CHECKSUMS:
+  AFNetworking: dd8c1868e57451e3d17ebd3516f2a8c16f9646fe
+  HTAutocompleteTextField: 984cfc05a2dc8906ad5ce560f3a4c7a1bbf51b2f
+  iOS-color-wheel: 2443ebb94c5bddc56129a1829ad254001a5c0732
+  KIF: 4dfc8fb58db542f66dd337bd9bdb8bddba233c29
+  TestFlightSDK: fe0567a897456b6f65b180541892ef0154986e01
+
+COCOAPODS: 0.31.1

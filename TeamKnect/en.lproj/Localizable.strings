@@ -1,0 +1,666 @@
+/* Localizable.strings
+  TeamKnect
+
+  Created by Scott Grosch on 12/25/13.
+  Copyright (c) 2013 Gargoyle Software, LLC. All rights reserved. */
+
+/* Drills group, defense */
+"DRILLS_DEFENSE" = "Defense";
+
+/* Drills group, goalie */
+"DRILLS_GOALIE" = "Goalie";
+
+/* Drills group, offense */
+"DRILLS_OFFENSE" = "Offense";
+
+/* Group section title for drills */
+"DRILLS" = "Play Book";
+
+/* Notes group, game */
+"NOTES_GAME" = "Game";
+
+/* Notes group, practice */
+"NOTES_PRACTICE" = "Practice";
+
+/* Notes group, rink */
+"NOTES_RINK" = "Rink";
+
+/* Group section title for notes */
+"Notes" = "Notes";
+
+/* Settings row in the group */
+"SETTINGS" = "Settings";
+
+/* Group section title for teams */
+"TEAMS" = "Teams";
+
+/* Label asking for birth date */
+"DATE_OF_BIRTH" = "Date of birth:";
+
+/* Placeholder text asking for email address */
+"EMAIL_PLACEHOLDER" = "Email Address (to login or signup)";
+
+/* Placeholder text asking for password */
+"PASSWORD_PLACEHOLDER" = "Password";
+
+/* The coaches/staff tab when inside a team */
+"TAB_TEAM_COACH_STAFF" = "Coaches";
+
+/* The fans tab when inside a team */
+"TAB_TEAM_FANS" = "Parents";
+
+/* The players tab when inside a team */
+"TAB_TEAM_PLAYERS" = "Players";
+
+/* Text used for player name when the name is missing */
+"INCOMPLETE_PROFILE" = "Incomplete Profile";
+
+/* The OK button on a dialog */
+"OK" = "OK";
+
+/* Placeholder text asking for first name */
+"FIRST_NAME_PLACEHOLDER" = "First Name";
+
+/* Placeholder text asking for last name */
+"LAST_NAME_PLACEHOLDER" = "Last Name";
+
+/* The 'next' button that goes to the next UITextField. */
+"ACCESSORY_VIEW_NEXT_BUTTON" = "next";
+
+/* The 'prev' button that goes to the previous UITextField. */
+"ACCESSORY_VIEW_PREV_BUTTON" = "prev";
+
+/* The cancel button */
+"Cancel" = "Cancel";
+
+/* Message stating that the email address must be filled in. */
+"MISSING_EMAIL" = "Please supply an email address.";
+
+/* Message stating that the first name must be filled in. */
+"MISSING_FIRST_NAME" = "Please supply your first name.";
+
+/* Message stating that the last name must be filled in. */
+"MISSING_LAST_NAME" = "Please supply your last name.";
+
+/* Message stating that the password field must be filled in. */
+"MISSING_PASSWORD" = "Please supply your password.";
+
+/* The register button to press on the registration screen */
+"REGISTER_DONE_BUTTON" = "Register";
+
+/* Message box saying the network is offline */
+"NOT_ONLINE_MSG" = "The internet connection appears to be down.";
+
+/* Navigation bar header for the sign up screen when initially registering. */
+"REGISTER_SIGN_UP" = "Signup";
+
+/* Message stating that what they entered doesn't look like an email address. */
+"NOT_AN_EMAIL" = "Please enter a valid email address.";
+
+/* Message stating that the account they specified exists, but the password is wrong. */
+"WRONG_REGISTER_PASSWORD_MESSAGE" = "Incorrect Password.";
+
+/* Text on the toolbar which will dismiss the keyboard. */
+"TOOLBAR_DISMISS" = "Dismiss";
+
+/* Placeholder text asking for password to be validated */
+"RETYPE_PASSWORD_PLACEHOLDER" = "Verify Password";
+
+/* Message stating that the two passwords entered are not the same. */
+"PASSWORDS_DO_NOT_MATCH" = "Passwords do not match.";
+
+/* Password must be at least 6 characters long. */
+"PASSWORD_TOO_SHORT" = "Password must be at least 6 characters long.";
+
+/* The continue button to press on the first registration screen */
+"REGISTER_CONTINUE_BUTTON" = "Continue";
+
+/* Text telling them to register with name/pwd and we'll either create new account or link to existing. */
+"REGISTER_INSTRUCTIONS" = "Not a member yet?  No worries, fill in and we will create an account for you.";
+
+/* Message explaining we ask for DOB to avoid harrasment. */
+"WHY_DOB" = "WHY_DOB";
+
+/* The label asking who to send the text to. */
+"MESSAGE_TO_LABEL" = "To:";
+
+/* Message stating we were not able to download their information. */
+"MY_DOWNLOAD_FAILED" = "MY_DOWNLOAD_FAILED";
+
+/* The button to press to send the chat message. */
+"MESSAGE_SEND_BUTTON" = "Send";
+
+/* Message saying that they haven't granted calendar access. */
+"NO_CALENDAR" = "Please grant access to your calendar in the device's settings.";
+
+/* Title for the button to press to take a picture. */
+"REGISTER_IMAGE_BUTTON" = "Add profile picture.";
+
+/* Placeholder for text asking for birthday */
+"BIRTHDATE" = "Birthday";
+
+/* Column header for a date */
+"DATE_COLUMN_HEADER" = "Date";
+
+/* Column header for the description */
+"DESCRIPTION_COLUMN_HEADER" = "Injury";
+
+/* Person is not injured, but they're not available */
+"INJURY_STATUS_AWAY" = "Scratch";
+
+/* Person is injured and not able to play */
+"INJURY_STATUS_OUT" = "Out";
+
+/* Person is unable to play, but can still attend practice */
+"INJURY_STATUS_PRACTICE" = "Train Only";
+
+/* Column header for the injury status */
+"STATUS_COLUMN_HEADER" = "Status";
+
+/* Call button on alert */
+"CALL_BUTTON" = "Call";
+
+/* Height formatted as feet and inches */
+"FEET_AND_INCHES" = "%1$d' %2$.0f\"";
+
+/* Weight formatted in kilograms */
+"KG_WEIGHT_FORMAT" = "%@ KG";
+
+/* Height formatted as meters */
+"METERS" = "%@ m";
+
+/* Weight formatted in imperial pounds. */
+"LBS_WEIGHT_FORMAT" = "%@ lbs.";
+
+/* The date of birth string from the player details table. */
+"DOB_HEADER" = "DOB:";
+
+/* The number header for the player details table. */
+"NUMBER_HEADER" = "No:";
+
+/* The country the person comes from for the player details table. */
+"COUNTRY_HEADER" = "Country:";
+
+/* The nationality of the person for the player details table. */
+"NATIONALITY_HEADER" = "Nationality:";
+
+/* Label for person's height on details page. */
+"HEIGHT_LABEL" = "Height:";
+
+/* Label for player position on details page. */
+"POSITION_LABEL" = "Position";
+
+/* Label for person's weight on details page. */
+"WEIGHT_LABEL" = "Weight";
+
+/* Label asking for the new team's sport */
+"NEW_SPORT_LABEL" = "Sport:";
+
+/* Placeholder text for the sport */
+"NEW_SPORT_NAME" = "Ice hockey, Soccer, etc...";
+
+/* Label asking for the new team name. */
+"NEW_TEAM_NAME_LABEL" = "Team Name:";
+
+/* Message when they press the add email button but didn't provide an email address. */
+"BLANK_EMAIL" = "Please supply an email address.";
+
+/* Text for button to add the email address to the list. */
+"EMAIL_ADD_BUTTON" = "Add Email";
+
+/* Label for the text field asking for an email address */
+"EMAIL_ADD_LABEL" = "Email:";
+
+/* Label for the city/locality */
+"CITY" = "City:";
+
+/* Message telling them to go add permissions to the address book */
+"GRANT_ADDRESS_BOOK" = "Please grant access to your Contacts to enable address book lookups.";
+
+/* Message stating that nobody in their address book has an email address. */
+"NO_EMAIL" = "None of your address book entries seems to have an email address.";
+
+/* Label for the state */
+"STATE" = "State:";
+
+/* Label for the street address */
+"STREET" = "Street:";
+
+/* Label for the zip code */
+"ZIP_CODE" = "Zip Code:";
+
+/* Message saying something failed, please try later. */
+"COMMUNICATION_FAILED" = "Communication with the server failed.  Please try again later.";
+
+/* Message asking them to grant location services. */
+"GRANT_LOCALIZATION" = "Please grant access to Location Services to enable additional features.";
+
+/* Message asking them to grant calendar access. */
+"GRANT_CALENDAR_ACCESS" = "Please grant access to your Calendar to display upcoming events.";
+
+/* The label for the calendar to create this event in. */
+"CALENDAR_CALENDAR_LABEL" = "Team";
+
+/* Placeholder text for the location of the calendar event. */
+"CALENDAR_LOCATION_PLACEHOLDER" = "Location";
+
+/* Placeholder text for the title of the calendar event. */
+"CALENDAR_TITLE_PLACEHOLDER" = "Title";
+
+/* Placeholder text for the URL of the calendar item */
+"CALENDAR_URL_PLACEHOLDER" = "URL";
+
+/* The label for the end of the calendar event date. */
+"END_DATE_LABEL" = "Ends";
+
+/* The label for the start of the calendar event date. */
+"START_DATE_LABEL" = "Starts";
+
+/* Action button to choose existing photo */
+"CHOOSE_PHOTO" = "Choose Existing";
+
+/* Message stating the start date must come before the end date. */
+"DATE_ORDER_WRONG" = "Start date must be before end date.";
+
+/* Message to display when they didn't provide a title for the calendar event. */
+"MISSING_CALENDAR_TITLE" = "Please provide a title.";
+
+/* Action button to take photo */
+"TAKE_PHOTO" = "Take Photo";
+
+/* Toolbar button on calendar view to go to next day. */
+"CALENDAR_NEXT_DAY" = "Day +";
+
+/* Toolbar button on calendar view to go to previous day. */
+"CALENDAR_PREVIOUS_DAY" = "Day -";
+
+/* Message to display when they didn't enter a team name on team creation. */
+"CREATE_TEAM_NAME_MISSING" = "Please enter a team name.";
+
+/* Message to display when they didn't enter a team name. */
+"CREATE_TEAM_SPORT_MISSING" = "Please pick a sport.";
+
+/* Message to display when they didn't enter a zip code on team creation */
+"CREATE_TEAM_ZIP_MISSING" = "Please enter a zip code.";
+
+/* Message telling them they have to enable calendar access to use this app. */
+"MUST_ENABLE_CALENDAR" = "I'm sorry but to use this application you must grant access to the calendar. \n\nPlease press the Home button and then go to Settings -> Privacy -> Calendars and enable access for TeamKnect.\n\nIf you do not wish to grant access please simply press the Home button to exit the application now.";
+
+/* Message stating we couldn't create the team. */
+"WEB_TEAM_CREATE_FAIL" = "Unable to create new team.  Please try later.";
+
+/* Alert title saying the web server is unavailable */
+"WEB_SERVER_DOWN" = "Web Server Unavailable";
+
+/* Button in nav bar to move to the next screen */
+"NEXT_BAR_BUTTON_ITEM" = "Next";
+
+/* Message asking them to register for team later. */
+"WEB_REGISTER_TEAM_FAIL" = "Unable to join team.  Please try again later.";
+
+/* Instructions to pick people and use the address book picker */
+"ADD_TEAM_MEMBERS_INSTRUCTIONS" = "Add players, coaches, and parents using the segmented picker.  If you'd like to pick from the address book, click the + in the email field.";
+
+/* Placeholder text for creating a new team name */
+"NEW_TEAM_NAME" = "Enter team name here.";
+
+/* Header for the person's email address */
+"PERSON_CONTACT_EMAIL_LABEL" = "Email";
+
+/* Header for the person's home address */
+"PERSON_CONTACT_HOME_LABEL" = "Home";
+
+/* Header for the person's phone number */
+"PERSON_CONTACT_PHONE_LABEL" = "Phone";
+
+/* Section header for the parents group. */
+"PLAYER_CONTACT_PARENTS_HEADER" = "PARENT CONTACT";
+
+/* Section header for the player group */
+"PLAYER_CONTACT_PLAYER_HEADER" = "PLAYER CONTACT";
+
+/* Section header for the roommates and billet family */
+"PLAYER_CONTACT_ROOMIES_HEADER" = "BILLET FAMILY/ROOMMATE";
+
+/* Label for the details of the injury */
+"INJURY_DETAILS" = "Details";
+
+/* Title for all of the person's historical injuries. */
+"INJURY_HISTORY_SECTION_HEADER" = "INJURY HISTORY";
+
+/* Title for the current injury's information */
+"INJURY_INFO_SECTION_HEADER" = "INJURY INFO";
+
+/* Label for the location of the injury */
+"INJURY_SITE" = "Site";
+
+/* Label for the availability of the player based on their injury status */
+"INJURY_AVAILABILITY" = "Availability";
+
+/* Person is healthy */
+"INJURY_STATUS_HEALTHY" = "Healthy";
+
+/* Zip code for new team */
+"NEW_TEAM_ZIP" = "Zip Code";
+
+/* Warning to display when the injury date is missing */
+"INJURY_EDITOR_MISSING_DATE" = "Please specify the injury date.";
+
+/* Warning to display when the details of the injury are missing */
+"INJURY_EDITOR_MISSING_DETAILS" = "Please specify the details of the injury.";
+
+/* Warning to display when the site of the injury is missing. */
+"INJURY_EDITOR_MISSING_SITE" = "Please specify the site/location of the injury.";
+
+/* The injury site was a concussion */
+"INJURY_SITE_CONCUSSION" = "Concussion";
+
+/* The injury site was the lower body */
+"INJURY_SITE_LOWER_BODY" = "Lower Body";
+
+/* The injury site was elsewhere */
+"INJURY_SITE_OTHER" = "Other";
+
+/* The injury site was the upper body */
+"INJURY_SITE_UPPER_BODY" = "Upper Body";
+
+/* Text for table row specifying to chat with all players. */
+"ALL_PLAYERS_ROW" = "All Players";
+
+/* Section header for adding new chat representing players */
+"CHAT_PEOPLE_SECTION_HEADER" = "People";
+
+/* Text for table row specifying to chat with all players. */
+"ALL_COACHES_ROW" = "All Coaches";
+
+/* Text for table row specifying to chat with all players. */
+"ALL_STAFF_ROW" = "All Staff";
+
+/* Message saying they can't select both a team group and a person in chat. */
+"DONT_MIX_TEAM_AND_PERSON" = "You can't select both a group and individual people at the same time.";
+
+/* Message to display when the press the done button on chat creation before selecting anyone */
+"CHAT_MISSING_TARGET" = "Please select somebody to chat with.";
+
+/* Conversation title for all coaches on a team. */
+"CONVERSATION_TEAM_ALL_COACHES" = "%@ Coaches";
+
+/* Conversation title for all staff on a team. */
+"CONVERSATION_TEAM_ALL_STAFF" = "%@ Staff";
+
+/* Conversation title for all players on a team. */
+"CONVERSATION_TEAM_PLUS_ALL" = "%@ Players";
+
+/* Table row saying there are no calendar events for the currently displayed date */
+"NO_CALENDAR_EVENTS" = "No scheduled events.";
+
+/* Choice to view the calendar in a day display. */
+"CALENDAR_VIEW_BY_DAY" = "By Day";
+
+/* Choice to view the calendar in a month display. */
+"CALENDAR_VIEW_BY_MONTH" = "By Month";
+
+/* Title asking what type of calendar view they want */
+"CALENDAR_VIEW_DISPLAY_TITLE" = "Display Type";
+
+/* The label for the type of calendar event this is. */
+"CALENDAR_TYPE_LABEL" = "Event Type";
+
+/* Delete all future events */
+"CALENDAR_DELETE_FUTURE" = "Delete All Future Events";
+
+/* Delete only this event */
+"CALENDAR_DELETE_THIS_ONLY" = "Delete This Event Only";
+
+/* Message title saying this is a repeating event. */
+"CALENDAR_REPEATING_EVENT_TITLE" = "This is a repeating event.";
+
+/* Text saying that a calendar event runs the entire day. */
+"CALENDAR_ALL_DAY" = "All Day";
+
+/* The imperial choice for measurement */
+"SETTING_SEGMENT_IMPERIAL" = "Imperial";
+
+/* The metric choice for measurement */
+"SETTING_SEGMENT_METRIC" = "Metric";
+
+/* Header for the account section in the settings table. */
+"SETTINGS_ACCOUNT_HEADER" = "Account";
+
+/* The profile row in the account section */
+"SETTINGS_ACCOUNT_PROFILE" = "Profile";
+
+/* Contact us row in the settings pane */
+"SETTINGS_CONTACT_US" = "Contact Us";
+
+/* Header for the manage teams section in the settings table. */
+"SETTINGS_MANAGE_TEAMS_HEADER" = "Manage Teams";
+
+/* Header for the measurement section in the settings table. */
+"SETTINGS_MEASUREMENT_HEADER" = "Measurements";
+
+/* Header for the social section in the settings table. */
+"SETTINGS_SOCIAL_HEADER" = "Social Media";
+
+/* Social media row in the settings pane */
+"SETTINGS_SOCIAL" = "Post to Social Media";
+
+/* Text for team label to generate a new team */
+"SETTINGS_CREATE_NEW_TEAM" = "Create New Team";
+
+/* String indicating the player has been invited to the team, but has not yet accepted */
+"INVITED" = "Invited";
+
+/* String indicating the player has joined the team */
+"JOINED" = "Joined";
+
+/* The format for showing names displayed with first name before last name */
+"NAME_FORMATTED_FIRST_LAST" = "%1$@ %2$@";
+
+/* The format for showing names displayed with last name before first name */
+"NAME_FORMATTED_LAST_FIRST" = "%1$@, %2$@";
+
+/* Table row text to tap when you wish to remove yourself from the team. */
+"TEAM_LEAVE" = "Leave Team";
+
+/* Ask for confirmation to drop from the team. */
+"DROP_FROM_TEAM_CONFIRM" = "Are you sure you want to drop? This action can't be undone.";
+
+/* Section header for the members section */
+"SETTINGS_TEAM_EDITOR_MEMBERS" = "Members";
+
+/* Section header for the other section */
+"SETTINGS_TEAM_EDITOR_OTHER" = "Other";
+
+/* Home Calendar */
+"HOME_CALENDAR" = "Home Calendar";
+
+/* The shot header from the player details table */
+"SHOT_HEADER" = "Shot:";
+
+/* Message saying we couldn't update their profile and to please try later. */
+"PERSON_UPDATE_FAILED" = "Failed to save profile information.  Please try later.";
+
+/* Text for button which deletes the currently edited calendar event. */
+"DELETE_CALENDAR_EVENT" = "Delete Event";
+
+/* Label for the row saying the event is all day long */
+"CALENDAR_EDIT_ALL_DAY" = "All-day";
+
+/* The label for the end repeat date of the event. */
+"CALENDAR_END_REPEAT_LABEL" = "End Repeat";
+
+/* Calendar recurrence end will be on a specific date. */
+"CALENDAR_REPEAT_END_ON_DATE" = "On Date";
+
+/* The label for the repeat type of the event. */
+"CALENDAR_REPEAT_LABEL" = "Repeat";
+
+/* Repeat calendar item every day */
+"REPEAT_DAILY" = "Daily";
+
+/* Text for the end date when the event never stops repeating */
+"REPEAT_END_NEVER" = "Never";
+
+/* Repeat calendar item every two weeks. */
+"REPEAT_EVERY_TWO_WEEKS" = "Every 2 Weeks";
+
+/* Repeat calendar item every month */
+"REPEAT_MONTHLY" = "Monthly";
+
+/* Never repeat calendar appointment. */
+"REPEAT_NONE" = "None";
+
+/* Repeat calendar item every week */
+"REPEAT_WEEKLY" = "Weekly";
+
+/* Repeat calendar item every year */
+"REPEAT_YEARLY" = "Yearly";
+
+/* Message stating that they have to pick a team for the calendar event. */
+"MISSING_TEAM_CALENDAR" = "Please select a team.";
+
+/* Message stating they can't create calendar item until they're on a team. */
+"CALENDAR_JOIN_TEAM_FIRST" = "Please create a team or join a team before trying to create calendar items.";
+
+/* The label for setting the calendar color */
+"TEAM_CALENDAR_COLOR" = "Calendar Color";
+
+/* Message saying we couldn't talk to the webserver and to please try again later. */
+"SERVER_DOWN_TRY_LATER" = "There was a problem communicating with the server.  Please try again later.";
+
+/* The notifications row in the account section */
+"SETTINGS_ACCOUNT_NOTIFICATIONS" = "Push Notifications";
+
+/* Get notified about calendar events */
+"SETTINGS_NOTIFICATION_EVENTS" = "Calendar Events";
+
+/* Get notified about group chat */
+"SETTINGS_NOTIFICATION_GROUP_CHAT" = "Group Chat";
+
+/* Get notified about tasks */
+"SETTINGS_NOTIFICATION_TASKS" = "Tasks";
+
+/* The title for the invite button */
+"ADD_PLAYERS_INVITE_BUTTON" = "Invite";
+
+/* Text for the table view cell row to add a new person to the team. */
+"ADD_NEW_PERSON_ROW" = "Add new person.";
+
+/* Text for the button that brings up the address book. */
+"ADDRESS_BOOK_BUTTON" = "Address Book";
+
+/* Text for the button that brings up team addresses */
+"TEAM_ADDRESS_BOOK" = "Other Teams";
+
+/* Instructions telling them to put a single email address per line. */
+"ONE_EMAIL_PER_LINE" = "List as many email addresses as you'd like, one per line.   You can also choose email addresses from your address book and from people who belong to other teams which you are a member of.";
+
+/* Label for table for date of injury */
+"DATE_OF_INJURY" = "Date of injury:";
+
+/* Label for table for date of return */
+"DATE_OF_RETURN" = "Date of return:";
+
+/* Text in the table row to invite more players to the team. */
+"ADD_PLAYERS_ROW" = "Invite more people.";
+
+/* Choice to jump to today in the calendar */
+"CALENDAR_VIEW_GOTO_TODAY" = "Go To Today";
+
+/* Message stating that the birthday field must be filled in. */
+"MISSING_BIRTHDAY" = "MISSING_BIRTHDAY";
+
+/* 'Next' label for the navigation bar button */
+"NEXT_BUTTON" = "Next";
+
+/* Label for the birthday. */
+"PROFILE_BIRTHDAY_LABEL" = "Birthday:";
+
+/* Label for the height in feet. */
+"PROFILE_FEET_LABEL" = "Feet:";
+
+/* Message stating that the height in feet must be entered. */
+"PROFILE_FEET_MISSING" = "Please enter the height in feet.";
+
+/* Label for the height in inches. */
+"PROFILE_INCHES_LABEL" = "Inches:";
+
+/* Message stating that the inches must be entered. */
+"PROFILE_INCHES_MISSING" = "Please enter the height in inches.";
+
+/* Label for the height in KG */
+"PROFILE_KG_LABEL" = "Kilos:";
+
+/* Message stating that the KG must be entered */
+"PROFILE_KG_MISSING" = "Please enter weight in KG.";
+
+/* Label for the height in pounds. */
+"PROFILE_LBS_LABEL" = "Pounds:";
+
+/* Label for the height in meters. */
+"PROFILE_METERS_LABEL" = "Meters:";
+
+/* Message stating that the height must be entered. */
+"PROFILE_METERS_MISSING" = "Please enter height in meters.";
+
+/* Message stating that the lbs must be entered. */
+"PROFILE_POUNDS_MISSING" = "Please enter the weight in pounds.";
+
+/* Save all future events */
+"CALENDAR_SAVE_FUTURE" = "Save for future events";
+
+/* Save only this event */
+"CALENDAR_SAVE_THIS_ONLY" = "Save for this event only";
+
+/* Placeholder text for country of birth */
+"COUNTRY_PLACEHOLDER" = "Country of birth";
+
+/* Placeholder text for nationality. */
+"NATIONALITY_PLACEHOLDER" = "Nationality";
+
+/* Message saying to fill in a phone number */
+"PHONE_MISSING" = "Please enter phone number.";
+
+/* Placeholder text to enter a phone number. */
+"PHONE_NUMBER" = "Phone number";
+
+/* Label asking for address. */
+"PROFILE_ADDRESS_LABEL" = "Optional Mailing Address:";
+
+/* Message saying address is missing */
+"PROFILE_ADDRESS_MISSING" = "Please fill out the address.";
+
+/* Message stating country is missing. */
+"PROFILE_COUNTRY_MISSING" = "Please choose a country.";
+
+/* Placeholder string for height in feet */
+"PROFILE_FEET_PLACEHOLDER" = "Height in feet";
+
+/* Placeholder string for inches. */
+"PROFILE_INCHES_PLACEHOLDER" = "Height in inches";
+
+/* Placeholder message for weight in KG */
+"PROFILE_KG_PLACEHOLDER" = "Weight in KG";
+
+/* Placeholder string for height in meters */
+"PROFILE_METERS_PLACEHOLDER" = "Height in meters";
+
+/* Message stating nationality is missing. */
+"PROFILE_NATIONALITY_MISSING" = "Please enter your nationality.";
+
+/* Placeholder message for weight in pounds */
+"PROFILE_POUNDS_PLACEHOLDER" = "Weight in pounds";
+
+/* Ask for confirmation to delete the team. */
+"DELETE_TEAM_CONFIRM" = "Are you sure you want to delete this team?  This action can not be undone.";
+
+/* Table row text to delete this entire team. */
+"TEAM_DELETE" = "Delete Team";
+
+/* Message asking them to delete the calendar themselves */
+"UNABLE_TO_REMOVE_CALENDAR" = "Unable to remove calendar titled '%@'.  Please remove it manually.";
+
+/* The text Apple uses to mark the end of an event that spans multiple days */
+"CALENDAR_SPAN_EVENT_ENDS" = "ENDS";
+
