@@ -18,16 +18,12 @@
 #import "WebServer.h"
 #import "Person.h"
 #import "Sport.h"
-#import "HomeViewController.h"
-#import "RearViewController.h"
-#import "SWRevealViewController.h"
 
 // TODO: http://www.raywenderlich.com/23037/how-to-use-instruments-in-xcode
 
 #define kGroupTeam   0
 #define kGroupDrills 1
 #define kGroupNotes  2
-#define kGroupSports 3      //------Jangsan.0420
 
 #define kDrillsDefense 0
 #define kDrillsOffense 1
@@ -123,11 +119,7 @@ extern NSString *const kLoadFullNotification;
         cell.textLabel.text = NSLocalizedString(@"SETTINGS", "Settings row in the group");
         cell.imageView.image = [UIImage imageNamed:@"setting"];
     }
-    if (section == kGroupSports) {
-        if (row == 0) {
-            cell.textLabel.text = @"Sports";
-        }
-    }                             //--------Jangsan. 0421.
+    
     
 #if DEBUG
     cell.accessibilityLabel = cell.textLabel.text;
@@ -158,29 +150,6 @@ extern NSString *const kLoadFullNotification;
         [[NSNotificationCenter defaultCenter] postNotificationName:GSRevealViewControllerReplaceFrontViewController object:self userInfo:@{GSRevealViewControllerReplaceFrontViewControllerKey : self.tabBarController}];
     } else if (section == kGroupDrills) {
     } else if (section == kGroupNotes) {
-    }else if (section == kGroupSports){
-        if (indexPath.row == 0) {
-            homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
-            UINavigationController * frontNavigationController;
-            
-            RearViewController * rearViewController = [[RearViewController alloc] initWithNibName:@"RearViewController" bundle:nil];
-            
-            frontNavigationController = [[UINavigationController alloc] initWithRootViewController:self];
-            self.naviController = frontNavigationController;
-            
-            SWRevealViewController * mainRevealController = [[SWRevealViewController alloc] initWithRearViewController:rearViewController frontViewController:frontNavigationController];
-            mainRevealController.delegate = self;
-            
-            self.swViewController = mainRevealController;
-            
-            [[[UIApplication sharedApplication] keyWindow] setRootViewController:self.swViewController];
-            [[[UIApplication sharedApplication] keyWindow] makeKeyAndVisible];
-            [[[UIApplication sharedApplication] keyWindow] setBackgroundColor:[UIColor blackColor]];
-            
-            [self.navigationController pushViewController:homeViewController animated:YES];
-            
-        }
-        
     }
 
 }
@@ -220,9 +189,7 @@ extern NSString *const kLoadFullNotification;
         case kGroupNotes:
             str = [NSLocalizedString(@"Notes", @"Group section title for notes") uppercaseStringWithLocale:locale];
             break;
-        case kGroupSports:
-            str = [NSLocalizedString(@"Sports", @"Group section title for Sports")uppercaseStringWithLocale:locale];//-------Jangsan.0421
-            break;
+
         default:
             abort();
     }

@@ -6,16 +6,11 @@
 //  Copyright (c) 2014 Gargoyle Software, LLC. All rights reserved.
 //
 
-#import "SWRevealViewController.h"
-#import "HomeViewController.h"
 
-@interface LeftUnderlayTableViewController : UITableViewController<SWRevealViewControllerDelegate>
-{
-    HomeViewController     *homeViewController;                     //------Jangsan. 0421
-}
+
+@interface LeftUnderlayTableViewController : UITableViewController
+
 
 @property (nonatomic, strong) NSManagedObjectContext           *managedObjectContext;
-@property (strong, nonatomic) SWRevealViewController           *swViewController;
-@property (strong, nonatomic) UINavigationController           *naviController;
 
 @end
