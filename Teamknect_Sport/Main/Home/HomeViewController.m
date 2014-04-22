@@ -40,33 +40,6 @@
 {
     [super viewDidLoad];
     
-    AppDelegate *appDelegate    = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    managedObjectContext        = appDelegate.managedObjectContext;
-    NSFetchRequest *request     = [[NSFetchRequest alloc]init];
-//     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Sport"];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:appDelegate.managedObjectContext];
-    [request setEntity:entity];
-    NSError *error = nil;
-    NSArray *mutableFetchResults = [[appDelegate.managedObjectContext executeFetchRequest:request error:&error]mutableCopy];
-//    NSString *str = [mutableFetchResults objectAtIndex:0];
-    Person *person;
-
-    if ([mutableFetchResults count] == 1) {
-        person = [mutableFetchResults objectAtIndex:0];
-
-    }
-    else if([mutableFetchResults count] == 0)
-    {
-        NSLog(@"Error- No User \n");
-      //  assert(![mutableFetchResults count]);
-    }
-    else{
-        NSLog(@"Error- Multi User \n");
-    }
-    
-    NSNumber *nub = person.latitude;
-    
-    
     [self imgViewLayout];
     globalSelectImgViewIndex = 0;           //global variable init.
     [self.navigationController setNavigationBarHidden:YES];
